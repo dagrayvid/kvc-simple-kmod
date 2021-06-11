@@ -40,3 +40,5 @@ ADD simple-kmod.conf .
 RUN mkdir -p /usr/lib/kvc/
 RUN mkdir -p /etc/kvc/
 RUN make install
+
+RUN systemctl enable kmods-via-containers@simple-kmod
